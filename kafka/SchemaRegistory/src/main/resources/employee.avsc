@@ -1,0 +1,33 @@
+{
+  "namespace": "com.mk.dto",
+  "type": "record",
+  "name": "Employee",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "firstName",
+      "type": "string"
+    },
+    {
+      "name": "middleName",
+      "type": "string"
+    },
+
+
+
+    {
+      "name": "lastName",
+      "type": "string"
+     },
+    {
+      "name": "emailID",
+      "type": "string",
+      "default": ""
+    }
+
+
+  ]
+}
