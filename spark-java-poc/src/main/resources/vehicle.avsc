@@ -1,0 +1,39 @@
+{
+  "fields": [
+    {
+      "name": "device_id",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "string"
+    },
+    {
+      "name": "latitude",
+      "type": "double"
+    },
+    {
+      "name": "longitude",
+      "type": "double"
+    },
+    {
+      "name": "altitude",
+      "type": "double"
+    },
+    {
+      "name": "speed",
+      "type": "double"
+    },
+    {
+      "name": "direction",
+      "type": "double"
+    },
+    {
+      "name": "ignition_status",
+      "type": "boolean"
+    }
+  ],
+  "name": "Vehicle",
+  "namespace": "com.mk.dto",
+  "type": "record"
+}
