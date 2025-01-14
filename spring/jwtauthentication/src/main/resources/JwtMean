@@ -1,0 +1,5 @@
+JWT : Json Web Token
+
+X  Algo and Token Type
+Y  Payload
+Z Verify Signature(Header,Payload)
