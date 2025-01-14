@@ -1,6 +1,6 @@
-package com.spark.geofence.consumer;
+package com.mk.spark.geofence.consumer;
 
-import com.spark.udf.UDF;
+import com.mk.spark.udf.UDF;
 import io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient;
 import io.confluent.kafka.schemaregistry.client.SchemaRegistryClient;
 import io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException;

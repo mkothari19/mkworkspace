@@ -1,4 +1,4 @@
-package com.spark.geofence.algo;
+package com.mk.spark.geofence.algo;
 
 public class HaversineGeofencing {
 

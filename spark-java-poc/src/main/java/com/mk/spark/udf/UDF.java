@@ -1,6 +1,6 @@
-package com.spark.udf;
+package com.mk.spark.udf;
 
-import com.spark.geofence.algo.HaversineGeofencing;
+import com.mk.spark.geofence.algo.HaversineGeofencing;
 import org.apache.spark.sql.api.java.UDF1;
 import org.apache.spark.sql.api.java.UDF2;
 import org.apache.spark.sql.api.java.UDF4;
