@@ -1,7 +1,7 @@
 {
+  "namespace": "com.mk.dto",
   "type": "record",
   "name": "Vehicle",
-  "namespace": "com.mk.dto",
   "fields": [
     {
       "name": "device_id",
@@ -22,18 +22,22 @@
     {
       "name": "altitude",
       "type": "double"
+
     },
     {
       "name": "speed",
       "type": "double"
+
     },
     {
       "name": "direction",
       "type": "double"
+
     },
     {
       "name": "ignition_status",
       "type": "boolean"
+
     }
   ]
 }

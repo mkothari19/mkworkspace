@@ -1,6 +1,6 @@
 
 topic:
- name: javatech-avro
+  name: avro-vehicle-gps
 
 server:
   port: 8181
