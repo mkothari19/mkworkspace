@@ -2,7 +2,6 @@ from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.ml.recommendation import ALS
 
-
 """
 For more complex personalization, use Collaborative Filtering 
 
@@ -55,7 +54,7 @@ als = ALS(userCol="UserID",
 # Step 3: Train  Model
 model = als.fit(als_data)
 
-# Generate top 3 products for each user
+# Generate top 3 product recommendations for each user
 user_recommendation = model.recommendForAllUsers(3)
 
-user_recommendation.show()
+user_recommendation.show(truncate=False)
