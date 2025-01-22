@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql import functions as F
+from pyspark.sql import functions as f
 from pyspark.ml.recommendation import ALS
 
 """
@@ -28,9 +28,9 @@ interactions_weight = {"View": 1, "Purchase": 5, "Add-to-cart": 3}
 # Step 2 : Assign wight to interactions
 
 interactions_df = interactions_df.withColumn("InteractionWeight",
-                                             F.when(F.col("Interaction") == "View", interactions_weight["View"])
-                                             .when(F.col("Interaction") == "Purchase", interactions_weight["Purchase"])
-                                             .when(F.col("Interaction") == "Add-to-cart",
+                                             f.when(f.col("Interaction") == "View", interactions_weight["View"])
+                                             .when(f.col("Interaction") == "Purchase", interactions_weight["Purchase"])
+                                             .when(f.col("Interaction") == "Add-to-cart",
                                                    interactions_weight["Add-to-cart"])
                                              .otherwise(0)
                                              )
@@ -38,8 +38,8 @@ interactions_df = interactions_df.withColumn("InteractionWeight",
 # Step 1 :Prepare dataset  for ALS
 
 als_data = interactions_df.select(
-    F.col("UserID").cast("int"), F.col("ProductID").cast("int"),
-    F.col("InteractionWeight").alias("Rating").cast("float"))
+    f.col("UserID").cast("int"), f.col("ProductID").cast("int"),
+    f.col("InteractionWeight").alias("Rating").cast("float"))
 
 # Step 2: Initialize ALS model
 
